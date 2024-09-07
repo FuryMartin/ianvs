@@ -7,11 +7,13 @@
 conda create -n ianvs-py36 python=3.6
 conda activate ianvs-py36
 
-# Clone Ianvs
-git clone https://github.com/kubeedge/ianvs.git
+# Clone path-error-fixed Ianvs
+git clone https://github.com/FuryMartin/ianvs.git
+# switch to quickstart branch
+git switch quickstart 
 cd ianvs
 
-# Download fixed Sedna
+# Download dependency-error-fixed Sedna
 wget https://github.com/FuryMartin/sedna/releases/download/v0.4.1.1/sedna-0.4.1.1-py3-none-any.whl
 pip install sedna-0.4.1.1-py3-none-any.whl
 
